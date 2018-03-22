@@ -99,8 +99,13 @@ ostream &operator<<(ostream &out, const Liczba &p) {
     /*for(int i=N-1; i>=0; i--){
         out << to_string(p.pole[i]) << " ";
     }*/
-    out<<p.pole[0];
+    out<<p.pole[1]<<" "<<p.pole[0];
     return  out;
+}
+Liczba Liczba::modul() {
+    Liczba tmp=*this;
+    tmp.minus=false;
+    return  tmp;
 }
 
 

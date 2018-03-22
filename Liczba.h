@@ -19,6 +19,7 @@ public:
     Liczba(unsigned long long tablica[N]);
     Liczba &operator=(const Liczba &p);
 
+    Liczba modul();
 
     friend Liczba operator+(const Liczba &l, const Liczba &p);
     friend Liczba operator-(const Liczba &l, const Liczba &p);
